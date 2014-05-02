@@ -26,6 +26,7 @@ window.iSpeech.speak(speakPluginResultHandler,nativePluginErrorHandler,"some tex
 
 
 Speech Recognition:
+
 Right now it only recognize up to 10 seconds and only return a value with a confidence greater than 0.3, this values can't be configured from javascript, you should edit iSpeech.m source code to change it. The same for the locale used to recognize.
 
 window.iSpeech.recognize(recognizePluginResultHandler,nativePluginErrorHandler);
