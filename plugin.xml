@@ -43,5 +43,7 @@
         <framework src="SystemConfiguration.framework" />
         <framework src="Security.framework" />
         <framework src="CFNetwork.framework" />
+
+        <resource-file src="src/ios/iSpeechSDK.bundle" />
     </platform>
 </plugin>
