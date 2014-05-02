@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jcesarmobile.iSpeech"
+    version="1.0.0">
+
+    <name>iSpeech</name>
+  <author>jcesarmobile</author>
+
+  <description>
+   This plugin that makes possible to use iSpeech library in phonegap projects, so you can use Text To Speech and Speech Recognition
+  </description>
+
+  <license>MIT</license>
+
+  <js-module src="www/iSpeech.js" name="iSpeech">
+      <clobbers target="iSpeech" />
+  </js-module>
+
+  <engines>
+      <engine name="cordova" version="&gt;=3.0.0" />
+  </engines>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+          <feature name="iSpeech">
+            <param name="ios-package" value="iSpeech"/>
+          </feature>
+        </config-file>
+
+        <source-file src="src/ios/iSpeech.m" />
+        <source-file src="src/ios/libiSpeechSDK.a" framework="true" />
+        <source-file src="src/ios/iSpeechSDK.bundle"/>
+
+        <header-file src="src/ios/Headers/iSpeechSDK.h" />
+        <header-file src="src/ios/Headers/ISSpeechRecognition.h" />
+        <header-file src="src/ios/Headers/ISSpeechRecognitionLocales.h" />
+        <header-file src="src/ios/Headers/ISSpeechRecognitionResult.h" />
+        <header-file src="src/ios/Headers/ISSpeechSynthesis.h" />
+        <header-file src="src/ios/Headers/ISSpeechSynthesisVoices.h" />
+        <header-file src="src/ios/iSpeech.h" />
+
+        <framework src="AudioToolbox.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="Security.framework" />
+        <framework src="CFNetwork.framework" />
+    </platform>
+</plugin>
