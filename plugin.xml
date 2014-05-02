@@ -8,7 +8,7 @@
   <author>jcesarmobile</author>
 
   <description>
-   This plugin that makes possible to use iSpeech library in phonegap projects, so you can use Text To Speech and Speech Recognition
+   This plugin makes possible to use iSpeech library in phonegap projects, so you can use Text To Speech and Speech Recognition
   </description>
 
   <license>MIT</license>
