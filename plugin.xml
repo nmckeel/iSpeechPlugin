@@ -30,7 +30,7 @@
 
         <source-file src="src/ios/iSpeech.m" />
         <source-file src="src/ios/libiSpeechSDK.a" framework="true" />
-        <source-file src="src/ios/iSpeechSDK.bundle"/>
+        <source-file src="src/ios/iSpeechSDK.bundle" framework="true"/>
 
         <header-file src="src/ios/Headers/iSpeechSDK.h" />
         <header-file src="src/ios/Headers/ISSpeechRecognition.h" />
